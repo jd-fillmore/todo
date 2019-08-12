@@ -19,6 +19,13 @@ button {
   width: 100%;
 }
 
+@media (max-width: 1200px) {
+  .row {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 .col {
   display: flex;
   flex-direction: column;
@@ -37,6 +44,12 @@ h1 {
   color: #fff;
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 26px;
+  }
 }
 
 button {
@@ -79,8 +92,15 @@ input {
   padding: 60px 0px 60px 0px;
 }
 
+@media (max-width: 768px) {
+  #content {
+    padding: 0px 0px 20px 0px;
+  }
+}
+
 ul {
   list-style: none;
+  padding-inline-start: 0px;
 }
 
 li {
@@ -114,6 +134,7 @@ i.fa-check-circle:hover {
 
 i.fa-trash {
   color: #d32f2f;
+  margin-left: 15px;
 }
 
 i.fa-trash:hover {
@@ -122,4 +143,10 @@ i.fa-trash:hover {
 
 .line-through {
   text-decoration: line-through;
+  color: #b7b2b2;
+  transition: 2s;
+}
+
+.hide {
+  display: none;
 }
